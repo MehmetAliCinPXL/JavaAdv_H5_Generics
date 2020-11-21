@@ -29,6 +29,9 @@ public class WorkingPlace<T extends Vehicle & Motorized> {
 		return numberOfThingsFixed;
 	}
 
+
+
+
 	public static void main(String[] args) {
 		WorkingPlace<Car> dit = new WorkingPlace();
 
