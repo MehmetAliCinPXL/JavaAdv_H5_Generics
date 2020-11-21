@@ -1,6 +1,9 @@
 package be.pxl.ja.oefening1;
 
-public class WorkingPlace<T> {
+public class WorkingPlace<T extends Vehicle & Motorized> {
+//a) extends Motorized
+//b) extends Vehicle
+//c) extends Vehicle & Motorized
 
 	private T thingToFix;
 	private int numberOfThingsFixed = 0;
@@ -26,5 +29,8 @@ public class WorkingPlace<T> {
 		return numberOfThingsFixed;
 	}
 
+	public static void main(String[] args) {
+		WorkingPlace<Car> dit = new WorkingPlace();
 
+	}
 }
